@@ -107,6 +107,7 @@ android {
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
     }
     splits {
         abi {
@@ -138,6 +139,11 @@ android {
 }
 
 dependencies {
+    implementation project(':react-native-vector-icons')
+    implementation project(':react-native-device-info')
+    implementation project(':react-native-config')
+    implementation project(':react-native-google-places')
+    implementation project(':react-native-maps')
     implementation project(':react-native-i18n')
     implementation project(':react-native-gesture-handler')
     implementation fileTree(dir: "libs", include: ["*.jar"])

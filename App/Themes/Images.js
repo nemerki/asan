@@ -1,6 +1,7 @@
 // leave off @2x/@3x
 const images = {
   logo: require('../Images/ir.png'),
+  marker: require('../Images/marker.png'),
   clearLogo: require('../Images/top_logo.png'),
   launch: require('../Images/launch-icon.png'),
   ready: require('../Images/your-app.png'),
@@ -19,6 +20,9 @@ const images = {
   chevronRight: require('../Images/Icons/chevron-right.png'),
   hamburger: require('../Images/Icons/hamburger.png'),
   backButton: require('../Images/Icons/back-button.png'),
+  ekonomIcon: require('../Images/econom.png'),
+  comfortIcon: require('../Images/comfort.png'),
+  vipIcon: require('../Images/vip.png'),
   closeButton: require('../Images/Icons/close-button.png')
 }
 

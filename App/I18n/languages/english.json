@@ -22,5 +22,11 @@
    "themeSettings": "Theme Settings",
    "deviceDetails": "Device Details",
    "noItems": "No Items",
-   "search": "Search"
+   "search": "Search",
+   "gedeceyinizUnvan": "Gedəcəyiniz ünvan ?",
+   "gedilecekUnvan": "Gediləcək ünvan",
+   "baslangicNoqtesi": "Başlanqıc nöqtesi",
+   "bitisNoqtesi": "Bitiş nöqtesi",
+   "teyinEt": "Teyin Et",
+   "next": "Növbeti",
 }
