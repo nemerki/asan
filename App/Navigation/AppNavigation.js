@@ -1,5 +1,6 @@
 import {createStackNavigator, createAppContainer} from 'react-navigation'
 import LoginScreen from '../Containers/LoginScreen'
+import RegisterScreen from '../Containers/RegisterScreen'
 import DestinationAddressScreen from '../Containers/DestinationAddressScreen'
 import PlaceScreen from '../Containers/PlaceScreen'
 import RouteScreen from '../Containers/RouteScreen'
@@ -7,6 +8,7 @@ import MapScreen from '../Containers/MapScreen'
 import LaunchScreen from '../Containers/LaunchScreen'
 import OrderScreen from '../Containers/OrderScreen'
 import TestScreen from '../Containers/TestScreen'
+import FirstScreen from '../Containers/FirstScreen'
 import I18n from '../I18n'
 import styles from './Styles/NavigationStyles'
 
@@ -14,6 +16,12 @@ import styles from './Styles/NavigationStyles'
 const PrimaryNav = createStackNavigator({
   TestScreen: {
     screen: TestScreen,
+    navigationOptions: {
+      header: null,
+    }
+  },
+  FirstScreen: {
+    screen: FirstScreen,
     navigationOptions: {
       header: null,
     }
@@ -41,6 +49,16 @@ const PrimaryNav = createStackNavigator({
       }
     }
   },
+  RegisterScreen: {
+    screen: RegisterScreen,
+    navigationOptions: {
+      title: I18n.t('register'),
+      headerTintColor: '#fff',
+      headerStyle: {
+        backgroundColor: '#451E5D',
+      }
+    }
+  },
   DestinationAddressScreen: {
     screen: DestinationAddressScreen,
     navigationOptions: {
@@ -57,7 +75,7 @@ const PrimaryNav = createStackNavigator({
 }, {
   // Default config for all screens
   // headerMode: 'none',
-  initialRouteName: 'LaunchScreen',
+  initialRouteName: 'FirstScreen',
   navigationOptions: {
     headerStyle: styles.header
   }

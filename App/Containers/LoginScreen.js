@@ -1,4 +1,4 @@
-import React, {Component,PropTypes} from 'react'
+import React, {Component, PropTypes} from 'react'
 import {ScrollView, Text, KeyboardAvoidingView, Dimensions, View, TouchableOpacity} from 'react-native'
 import {connect} from 'react-redux'
 // Add Actions - replace 'Your' with whatever your reducer is called :)
@@ -25,6 +25,7 @@ class LoginScreen extends Component {
     this.isAttempting = true
     // attempt a login - a saga is listening to pick it up from here.
     this.props.attemptLogin(mobile, password)
+    this.props.navigation.navigate('MapScreen')
   }
   onPhoneNumberChange = () => {
     this.setState({

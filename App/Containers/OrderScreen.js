@@ -180,13 +180,13 @@ class OrderScreen extends Component {
                       backgroundColor='#34C57A'
                       borderColor='#34C57A'
                       text='Sifariş ET'
-                      width='48%'/>
-            <MyButton width='47%'
-                      onPress={() => this.props.navigation.navigate('RegisterScreen')}
-                      backgroundColor='#451E5D'
-                      color='#fff'
-                      borderColor='#451E5D'
-                      text='Başqası Üçün'/>
+                      width='97%'/>
+            {/*<MyButton width='47%'*/}
+            {/*          onPress={() => this.props.navigation.navigate('RegisterScreen')}*/}
+            {/*          backgroundColor='#451E5D'*/}
+            {/*          color='#fff'*/}
+            {/*          borderColor='#451E5D'*/}
+            {/*          text='Başqası Üçün'/>*/}
           </View>
 
           <TextInput style={{
